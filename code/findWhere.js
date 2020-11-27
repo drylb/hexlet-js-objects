@@ -2,7 +2,7 @@
 /* eslint no-restricted-syntax: ["off", "ForOfStatement"] */
 
 // BEGIN (write your solution here)
-const test = [
+/* const test = [
   { title: 'Book of Fooos', author: 'FooBar', year: 1111 },
   { title: 'Cymbeline', author: 'Shakespeare', year: 1611 },
   { title: 'The Tempest', author: 'Shakespeare', year: 1611 },
@@ -10,10 +10,10 @@ const test = [
   { title: 'Still foooing', author: 'FooBar', year: 3333 },
   { title: 'Happy Foo', author: 'FooBar', year: 4444 },
 ];
-const where1 = { author: 'Shakespeare', year: 1611 }; // { title: 'Cymbeline', author: 'Shakespeare', year: 1611 },
-const where2 = { author: 'undefined', year: 1611 }; // null
+const where1 = { author: 'Shakespeare', year: 1611 };
+const where2 = { author: 'undefined', year: 1611 };
 const where3 = { year: 4444 }; // { title: 'Happy Foo', author: 'FooBar', year: 4444 }
-const where4 = { author: 'Shakespeare', year: 1611, title: 'The Tempest' }; //  { title: 'The Tempest', author: 'Shakespeare', year: 1611 },
+const where4 = { author: 'Shakespeare', year: 1611, title: 'The Tempest' }; */
 
 const findWhere = (dataArr, where) => {
   const keys = Object.keys(where);
@@ -29,6 +29,7 @@ const findWhere = (dataArr, where) => {
       return data;
     }
   }
+  return 'something went wrong';
 };
 
 const findWhere1 = (dataArr, where) => {
