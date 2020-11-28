@@ -1,6 +1,6 @@
 // @ts-check
 /* eslint no-restricted-syntax: ["off", "ForOfStatement"] */
-
+import _ from 'lodash';
 // BEGIN (write your solution here)
 const isThisObject = (obj) => {
   const type = typeof obj;
@@ -19,13 +19,10 @@ const deepCloneObj = (obj) => {
   return copy;
 };
 
-export default deepCloneObj;
+export { deepCloneObj };
 // END
 
-
 // VERSION WITH LODASH.
-
-import _ from 'lodash';
 
 // BEGIN (write your solution here)
 const cloneObj = (obj) => {
